@@ -7,18 +7,18 @@ import javax.faces.bean.ViewScoped;
 
 @ManagedBean
 @ViewScoped
-public class Test implements Serializable 
+public class Test implements Serializable
 {
 	/**
-	 * 
+	 *
 	 */
 	private static final long serialVersionUID = -3792739811348009771L;
-	
-	private String testString = "This is a test";
-	
+
+	private String testString = "You are a faaaaaaaaaaaaaaaag";
+
 	public Test()
 	{
-		
+
 	}
 
 	public String getTestString() {
