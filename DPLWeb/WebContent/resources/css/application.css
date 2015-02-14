@@ -1,0 +1,48 @@
+/**********************************************************************/
+/*Creation Date: 	2/13/15                                           */
+/*Last Modified: 	2/13/15                                           */
+/*Description:		Appliction wide styles only go in this css        */
+/**********************************************************************/
+
+/*Green color = #45C69C*/
+/*Grey color  = #575657*/
+
+
+body
+{
+	margin: 0;
+	padding: 0;
+}
+
+/*Top banner of the site*/
+.banner
+{
+	background-color: #45C69C;
+	width: 100%;
+	height: 100px;
+	border-bottom: 3px solid #575657;
+}
+
+/*User name inside the banner*/
+.banner-user-name
+{
+	float: right;
+	font-size: 22px;
+	font-family: 'Ubuntu';
+	color: #4d4d4d;
+	margin: 33px 18px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
