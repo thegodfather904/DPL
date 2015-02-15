@@ -4,22 +4,40 @@
 /*Description:		Appliction wide styles only go in this css        */
 /**********************************************************************/
 
-/*Green color = #45C69C*/
-/*Grey color  = #575657*/
+/*Green color 		= #45C69C*/
+/*Grey color  		= #575657*/
+/*Grey background 	= #D2D7D3*/
 
 
+/*****************************HTML**************************************/
 body
 {
 	margin: 0;
 	padding: 0;
+	font-family: 'Ubuntu', Serif;
+	background-color: #E9EBEF;
+	font-size: 15px;
 }
 
 
+/***************************Primefaces**********************************/
 
+/*input text*/
+.ui-inputfield
+{
+	box-shadow: none;
+}
 
+.ui-inputfield.ui-state-focus
+{
+	box-shadow: 0px 0px 4px 0px rgba(69,198,156,0.75);
+	border: 1px solid #45C69C;
+}
 
-
-
+.ui-inputfield.ui-state-hover
+{
+	border: 1px solid #45C69C;
+}
 
 
 

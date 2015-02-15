@@ -1,0 +1,48 @@
+/**********************************************************************/
+/*Creation Date: 	2/14/15                                           */
+/*Last Modified: 	2/14/15                                           */
+/*Description:		Login page                                        */
+/**********************************************************************/
+
+.login-container
+{
+	border: 6px solid #333333;
+	width: 450px;
+	height: 500px;
+	margin: 75px auto 0 auto;
+	background-color: #fff;
+}
+
+.top-title
+{
+	font-family: 'Montserrat', Serif;
+	font-size: 40px;
+	width: 295px;
+	margin: 45px auto 0 auto;
+}
+
+.input-container
+{
+	width: 350px;
+	margin: 40px auto 0 auto;
+}
+
+.login-input
+{
+	width: 100%;
+	font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

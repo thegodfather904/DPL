@@ -7,18 +7,30 @@
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:p="http://primefaces.org/ui">
 
-	<h:head>
-		
-	</h:head>
 
-	<h:body>
-		<ui:composition template = "/templates/template.xhtml">
-		
-			<ui:define name = "title">Duval Pickem League</ui:define>
-		
-			<ui:define name = "content">
-				Test content
-			</ui:define>
-		</ui:composition>
-	</h:body>
+	<ui:composition template = "/templates/template.xhtml">
+	
+		<ui:define name = "title">Index</ui:define>
+	
+		<ui:define name = "stylesheets">
+			<h:outputStylesheet library = "css" name = "login.css"/>
+		</ui:define>
+		<ui:define name = "webfonts">
+			<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'></link>
+		</ui:define>
+	
+		<ui:define name = "content">
+			<div class = "login-container">
+				<div class = "top-title">
+					Member Login
+				</div>
+				<div class = "input-container">
+					<p:inputText id = "username" placeholder = "Username" styleClass = "login-input"/>
+				</div>
+				<div class = "input-container">
+					<p:password id = "password" placeholder = "Password" styleClass = "login-input"/>
+				</div>
+			</div>
+		</ui:define>
+	</ui:composition>
 </html>
