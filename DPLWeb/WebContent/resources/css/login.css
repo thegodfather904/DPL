@@ -6,9 +6,9 @@
 
 .login-container
 {
-	border: 6px solid #333333;
+	border: 6px solid #333;
 	width: 450px;
-	height: 500px;
+	height: 440px;
 	margin: 75px auto 0 auto;
 	background-color: #fff;
 }
@@ -19,6 +19,7 @@
 	font-size: 40px;
 	width: 295px;
 	margin: 45px auto 0 auto;
+	color: #333;
 }
 
 .input-container
@@ -29,10 +30,49 @@
 
 .login-input
 {
-	width: 100%;
+	width: 97%;
 	font-size: 18px;
 }
 
+#loginButtonContainer
+{
+	width: 100%;
+	margin: 35px 0;
+}
+
+/*had to add this to center the command link, it wouldn't let me give the link a width*/
+#loginButtonContainerInner
+{
+	width: 84px; 
+	margin: 0 auto;
+}
+
+.login-command-button
+{
+	font-size: 24px;
+}
+
+.login-separator
+{
+	width: 352px;
+}
+
+#createForgotContainer
+{
+	width: 100%;
+}
+
+.create-forgot-container-inner
+{
+	float: left; 
+	width: 221px;
+	margin-top: 20px;
+}
+
+.create-forgot-container-inner .ui-commandlink
+{
+	padding-left: 65px;
+}
 
 
 

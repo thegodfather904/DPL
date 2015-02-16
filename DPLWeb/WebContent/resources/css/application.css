@@ -19,6 +19,15 @@ body
 	font-size: 15px;
 }
 
+/*Add this class to a div and specify height inline if you need a vertical line*/
+.vertical-line
+{
+	width: 2px;
+	background-color: #A8A8A8;
+	height: 100%; /*Override in-line if you want specific height.*/
+	float: left;
+}
+
 
 /***************************Primefaces**********************************/
 
@@ -38,6 +47,35 @@ body
 {
 	border: 1px solid #45C69C;
 }
+
+
+/*Command Link*/
+.ui-commandlink
+{
+	text-decoration: none;
+	color: #333;
+}
+
+.ui-commandlink:hover
+{
+	color: #45C69C;
+}
+
+/*Separator*/
+.ui-separator.ui-state-default
+{
+	border: 1px solid #A8A8A8;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
