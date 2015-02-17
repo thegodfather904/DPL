@@ -7,46 +7,7 @@
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:p="http://primefaces.org/ui">
 
-
-	<ui:composition template = "/templates/template.xhtml">
-	
-		<ui:define name = "title">DPL - Log In</ui:define>
-	
-		<ui:define name = "stylesheets">
-			<h:outputStylesheet library = "css" name = "login.css"/>
-		</ui:define>
-		<ui:define name = "webfonts">
-			<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'></link>
-		</ui:define>
-	
-		<ui:define name = "content">
-			<div class = "login-container">
-				<div class = "top-title">
-					Member Login
-				</div>
-				<div class = "input-container">
-					<p:inputText id = "username" placeholder = "Username" styleClass = "login-input"/>
-				</div>
-				<div class = "input-container">
-					<p:password id = "password" placeholder = "Password" styleClass = "login-input"/>
-				</div>
-				<div id = "loginButtonContainer">
-					<div id = "loginButtonContainerInner">
-						<p:commandLink id = "loginButton" value = "LOG IN" styleClass = "login-command-button"/>
-					</div>
-				</div>
-				<p:separator styleClass = "login-separator"/>
-				
-				<div id = "createForgotContainer">
-					<div class = "create-forgot-container-inner">
-						<p:commandLink id = "forgotButton" value = "FORGOT" styleClass = "login-command-button"/>
-					</div>
-					<div class="vertical-line" style="height: 60px; margin-top: 5px;" />
-					<div class = "create-forgot-container-inner">
-						<p:commandLink id = "createButton" value = "CREATE" styleClass = "login-command-button"/>
-					</div>
-				</div>
-			</div>
-		</ui:define>
+	<ui:composition>
+		<ui:include src = "/pages/login.xhtml"/>
 	</ui:composition>
 </html>
