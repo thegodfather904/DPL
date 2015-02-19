@@ -24,39 +24,41 @@
 		</ui:define>
 	
 		<ui:define name = "content">
-			<div class = "login-container">
-				<div class = "top-title">
-					Member Login
-				</div>
-				<div class = "input-container">
-					<p:inputText id = "username" placeholder = "Username" styleClass = "login-input"/>
-				</div>
-				<div class = "input-container">
-					<p:password id = "password" placeholder = "Password" styleClass = "login-input"/>
-				</div>
-				<div id = "loginButtonContainer" class = "hide-mobile">
-					<div id = "loginButtonContainerInner">
-						<p:commandLink id = "loginButton" value = "LOG IN" styleClass = "login-command-button"/>
+			<h:form id = "loginForm">
+				<div class = "login-container">
+					<div class = "top-title">
+						Member Login
+					</div>
+					<div class = "input-container">
+						<p:inputText id = "username" placeholder = "Username" styleClass = "login-input" value = "#{loginVO.username}"/>
+					</div>
+					<div class = "input-container">
+						<p:password id = "password" placeholder = "Password" styleClass = "login-input" value = "#{loginVO.password}"/>
+					</div>
+					<div id = "loginButtonContainer" class = "hide-mobile">
+						<div id = "loginButtonContainerInner">
+							<p:commandLink id = "loginButton" value = "LOG IN" styleClass = "login-command-button" actionListener = "#{loginEvent.authenticateUser}"/>
+						</div>
+					</div>
+					<p:separator styleClass = "login-separator hide-mobile"/>
+					
+					<div id = "createForgotContainer" class = "hide-mobile">
+						<div class = "create-forgot-container-inner">
+							<p:commandLink id = "forgotButton" value = "FORGOT" styleClass = "login-command-button"/>
+						</div>
+						<div class="vertical-line" style="height: 60px; margin-top: 5px;" />
+						<div class = "create-forgot-container-inner">
+							<p:commandLink id = "createButton" value = "CREATE" styleClass = "login-command-button"/>
+						</div>
+					</div>
+					
+					<div class = "hide-desktop">
+						<p:commandButton value = "LOG IN" styleClass = "hide-desktop mobile-button log-in-button"/>
+						<p:commandButton value = "CREATE" styleClass = "hide-desktop mobile-button log-in-button"/>
+						<p:commandLink value = "Forgot Password?" style = "margin-top: 10px;"/>
 					</div>
 				</div>
-				<p:separator styleClass = "login-separator hide-mobile"/>
-				
-				<div id = "createForgotContainer" class = "hide-mobile">
-					<div class = "create-forgot-container-inner">
-						<p:commandLink id = "forgotButton" value = "FORGOT" styleClass = "login-command-button"/>
-					</div>
-					<div class="vertical-line" style="height: 60px; margin-top: 5px;" />
-					<div class = "create-forgot-container-inner">
-						<p:commandLink id = "createButton" value = "CREATE" styleClass = "login-command-button"/>
-					</div>
-				</div>
-				
-				<div class = "hide-desktop">
-					<p:commandButton value = "LOG IN" styleClass = "hide-desktop mobile-button log-in-button"/>
-					<p:commandButton value = "CREATE" styleClass = "hide-desktop mobile-button log-in-button"/>
-				</div>
-
-			</div>
+			</h:form>
 		</ui:define>
 		
 	</ui:composition>
