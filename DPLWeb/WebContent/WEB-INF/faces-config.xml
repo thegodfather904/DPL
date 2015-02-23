@@ -6,4 +6,19 @@
     xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_1.xsd"
     version="2.1">
 
+	<navigation-rule>
+		<navigation-case>
+			<from-outcome>login</from-outcome>
+			<to-view-id>/pages/login.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>create</from-outcome>
+			<to-view-id>/pages/newUser.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>forgot</from-outcome>
+			<to-view-id>/pages/forgotPassword.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
 </faces-config>

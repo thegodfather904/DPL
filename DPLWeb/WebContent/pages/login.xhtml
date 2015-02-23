@@ -25,7 +25,8 @@
 	
 		<ui:define name = "content">
 			<h:form id = "loginForm">
-			<img src="../resources/images/LOGO_2.png" class="img-logo"/>
+				<p:graphicImage name ="LOGO_2.png" library = "images" alt = "LOGO" styleClass = "img-logo"/>
+<!-- 			<img src="../resources/images/LOGO_2.png" class="img-logo"/> -->
 				<div class = "login-container">
 <!-- 					<div class = "top-title"> -->
 <!-- 						Member Login -->
@@ -45,11 +46,11 @@
 					
 					<div id = "createForgotContainer" class = "hide-mobile">
 						<div class = "create-forgot-container-inner">
-							<p:commandLink id = "forgotButton" value = "FORGOT" styleClass = "login-command-button"/>
+							<p:commandLink id = "forgotButton" value = "FORGOT" styleClass = "login-command-button" action = "forgot"/>
 						</div>
 						<div class="vertical-line" style="height: 60px; margin-top: 5px;" />
 						<div class = "create-forgot-container-inner">
-							<p:commandLink id = "createButton" value = "CREATE" styleClass = "login-command-button"/>
+							<p:commandLink id = "createButton" value = "CREATE" styleClass = "login-command-button" action = "create"/>
 						</div>
 					</div>
 					

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14246549021050" configfile="/DPLWeb/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="*" id="pf14246550195941" outlinks="pf14246550195942 pf14246550195943 pf14246553872566" path="*"/>
+  <nodes xsi:type="pageflow:PFPage" name="pages/login.xhtml" id="pf14246550195944" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf14246550195942" path="/pages/login.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="pages/newUser.xhtml" id="pf14246550195945" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" inlinks="pf14246550195943" path="/pages/newUser.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="pages/forgotPassword.xhtml" id="pf14246553872567" referenceLink="//@navigationRule.0/@navigationCase.2/@toViewId|" inlinks="pf14246553872566" path="/pages/forgotPassword.xhtml"/>
+  <links id="pf14246550195942" target="pf14246550195944" source="pf14246550195941" outcome="login"/>
+  <links id="pf14246550195943" target="pf14246550195945" source="pf14246550195941" outcome="create"/>
+  <links id="pf14246553872566" target="pf14246553872567" source="pf14246550195941" outcome="forgot"/>
+</pageflow:Pageflow>
