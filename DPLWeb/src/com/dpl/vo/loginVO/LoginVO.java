@@ -5,6 +5,8 @@ import java.io.Serializable;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 
+import com.dpl.event.loginEvent.LoginEvent;;
+
 @ManagedBean
 @ViewScoped
 public class LoginVO implements Serializable
@@ -18,7 +20,15 @@ public class LoginVO implements Serializable
 	{
 		
 	}
-
+	
+	/*Verifies username and password*/
+	public void authenticateUser()
+	{
+		LoginEvent event = new LoginEvent();
+		boolean isAuthenticated = event.authenticateUser(username, password);
+		System.out.println(isAuthenticated);
+	}
+	
 	public String getUsername() {
 		return username;
 	}

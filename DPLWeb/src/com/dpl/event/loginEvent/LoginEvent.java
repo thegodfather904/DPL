@@ -2,10 +2,8 @@ package com.dpl.event.loginEvent;
 
 import java.io.Serializable;
 
-import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
-import javax.faces.context.FacesContext;
 
 @ManagedBean
 @RequestScoped
@@ -18,9 +16,16 @@ public class LoginEvent implements Serializable
 		
 	}
 	
-	public void authenticateUser()
+	public boolean authenticateUser(String username, String password)
 	{
-		System.out.println("HERE");
+		boolean isAuthenticated = false;
+		
+		//db call will go here
+		if(username.equals("username") && password.equals("password"))
+			isAuthenticated = true;
+		
+		return isAuthenticated;
+		
 	}
 	
 }
