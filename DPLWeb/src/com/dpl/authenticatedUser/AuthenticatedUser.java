@@ -11,7 +11,7 @@ public class AuthenticatedUser implements Serializable
 {
 	private static final long serialVersionUID = 2455816720678921431L;
 	
-	private String userName;
+	private String username;
 	private String email;
 	private String name;
 	
@@ -20,14 +20,6 @@ public class AuthenticatedUser implements Serializable
 	public AuthenticatedUser()
 	{
 		
-	}
-	
-	public String getUserName() {
-		return userName;
-	}
-
-	public void setUserName(String userName) {
-		this.userName = userName;
 	}
 
 	public String getEmail() {
@@ -53,7 +45,13 @@ public class AuthenticatedUser implements Serializable
 	public void setAuthenticated(boolean authenticated) {
 		this.authenticated = authenticated;
 	}
-	
-	
+
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
 	
 }

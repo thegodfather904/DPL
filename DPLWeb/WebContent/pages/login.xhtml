@@ -32,7 +32,8 @@
 <!-- 						Member Login -->
 <!-- 					</div> -->
 					<div class = "input-container">
-						<p:inputText id = "username" placeholder = "Username" styleClass = "login-input" value = "#{loginVO.username}"/>
+						<p:inputText id = "username" placeholder = "Username" styleClass = "login-input" value = "#{loginVO.username}" required = "true"/>
+						<p:message for = "username"/>
 					</div>
 					<div class = "input-container">
 						<p:password id = "password" placeholder = "Password" styleClass = "login-input" value = "#{loginVO.password}"/>

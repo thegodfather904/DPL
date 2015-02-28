@@ -4,8 +4,10 @@ import java.io.Serializable;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
+import javax.faces.bean.ManagedProperty;
 
-import com.dpl.event.loginEvent.LoginEvent;;
+import com.dpl.event.loginEvent.LoginEvent;
+import com.dpl.authenticatedUser.AuthenticatedUser;
 
 @ManagedBean
 @ViewScoped
@@ -15,6 +17,10 @@ public class LoginVO implements Serializable
 	
 	private String username;
 	private String password;
+	
+	//Authenticated User Bean
+	@ManagedProperty("#{authenticatedUser}")
+	private AuthenticatedUser authenticatedUser;
 	
 	public LoginVO()
 	{
@@ -44,4 +50,11 @@ public class LoginVO implements Serializable
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	
+	public void setAuthenticatedUser(AuthenticatedUser authenticatedUser)
+	{
+		this.authenticatedUser = authenticatedUser;
+	}
+	
+	
 }
