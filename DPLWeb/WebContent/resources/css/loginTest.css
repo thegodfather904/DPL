@@ -1,0 +1,180 @@
+/*mobile*/
+@media only screen and (max-width: 480px)
+{
+	.login-container
+	{
+/* 		background-color: rgba(255,255,255, 0.0); */
+		border-style: none;
+		width: 320px;
+	}
+	
+	.input-container
+	{
+		width: 285px;
+	}
+	
+	.login-input
+	{
+		border-radius: 0px;
+	}
+/* 	.ui-inputfield.ui-state-hover */
+/* 	{ */
+/* 		border: 1px solid #333; */
+/* 	} */
+	
+/* 	.ui-inputfield.ui-state-focus */
+/* 	{ */
+/* 		border: 1px solid #333; */
+/* 		box-shadow: 0px 0px 4px 0px rgba(51,51,51,0.75); */
+/* 	} */
+	
+	.ui-commandlink:hover
+	{
+		color: #333;
+		opacity: .6;
+	}
+	
+	.login-separator
+	{
+		width: 285px;
+	}
+	
+	.hide-mobile
+	{
+		display: none;
+	}
+	
+	.log-in-button
+	{
+		width: 285px;
+		margin-top: 40px;
+	}
+	
+	.img-logo
+	{
+		margin: 10px;
+	}
+	
+}
+
+/*tablet and desktop*/
+@media only screen and (min-width: 481px)
+{
+	.login-container
+	{
+		border: 4px solid rgba(69,198,156,0.75);
+		border-radius: 25px;
+		background: rgba(255,255,255,0.8);
+		width: 450px;
+	}
+	
+	.input-container
+	{
+		width: 350px;
+	}
+	
+	.login-input
+	{
+		border-radius: 10px;
+	}
+	
+	.login-separator
+	{
+		width: 352px;
+	}
+	
+	.hide-desktop
+	{
+		display: none;
+	}
+}
+
+
+
+/*Styles for all screens*/
+body
+{
+	background-image: url("../resources/images/jax_skyline_bw.png");
+	background-repeat:no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+	background-position:center;
+    display: table;
+    background-color: #000;
+}
+
+body>div 
+{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.login-container
+{
+	height: 350px;
+	margin: 0 auto 0 auto;
+	margin-top: -40px;
+}
+
+.top-title
+{
+	font-family: 'Montserrat', Serif;
+	font-size: 40px;
+	width: 295px;
+	margin: 45px auto 0 auto;
+	color: #333;
+}
+
+.input-container
+{
+	margin: 40px auto 0 auto;
+}
+
+.login-input
+{
+	width: 97%;
+	font-size: 25px;
+	background-color: #fff;
+}
+
+#loginButtonContainer
+{
+	width: 100%;
+	margin: 35px 0;
+}
+
+/*had to add this to center the command link, it wouldn't let me give the link a width */
+#loginButtonContainerInner
+{
+	width: 90px; 
+	margin: 0 auto;
+}
+
+.login-command-button
+{
+	font-size: 25px;
+	font-weight: 600;
+}
+
+#createForgotContainer
+{
+	width: 100%;
+}
+
+.create-forgot-container-inner
+{
+	float: left; 
+	width: 49%;
+	margin-top: 20px;
+}
+
+.img-logo
+{
+	width: 135px;
+	background-position: center;
+}
+
+
+

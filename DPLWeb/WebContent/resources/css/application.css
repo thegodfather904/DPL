@@ -7,6 +7,7 @@
 /*Green color 		= #45C69C*/
 /*Grey color  		= #575657*/
 /*Grey background 	= #D2D7D3*/
+/*Blue color		= #0202D2*/
 
 
 /*****************************HTML**************************************/
@@ -30,7 +31,7 @@ body
 .vertical-line
 {
 	width: 2px;
-	background-color: #A8A8A8;
+	background-color: #45C69C;
 	height: 100%; /*Override in-line if you want specific height.*/
 	float: left;
 }
@@ -78,7 +79,7 @@ body
 /*Separator*/
 .ui-separator.ui-state-default
 {
-	border: 1px solid #A8A8A8;
+	border: 1px solid #45C69C;
 }
 
 
@@ -86,9 +87,9 @@ body
 .mobile-button.ui-button
 {
 	background: none;
-	background-color: #0B2F24;
+	background-color: #45C69C;
 	text-shadow: none;
-	border: 1px solid #0B2F24;
+	border: 1px solid #45C69C;
 	color: #fff;
 	height: 40px;
 }

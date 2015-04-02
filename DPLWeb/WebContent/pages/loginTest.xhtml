@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+	<ui:composition template = "/templates/template.xhtml">
+	
+		<ui:define name = "title">DPL - Log In</ui:define>
+	
+		<ui:define name = "stylesheets">
+			<h:outputStylesheet library = "css" name = "loginTest.css"/>
+			
+		</ui:define>
+		
+		<ui:define name = "webfonts">
+			<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'></link>
+		</ui:define>
+	
+		<ui:define name = "header">
+			<!-- Override so header doesn't show on login -->
+		</ui:define>
+	
+		<ui:define name = "content">
+			<h:form id = "loginForm">
+				<p:graphicImage name ="LOGO_2.png" library = "images" alt = "LOGO" styleClass = "img-logo"/>
+<!-- 			<img src="../resources/images/LOGO_2.png" class="img-logo"/> -->
+				<div class = "login-container">
+<!-- 					<div class = "top-title"> -->
+<!-- 						Member Login -->
+<!-- 					</div> -->
+					<div class = "input-container">
+						<p:inputText id = "username" placeholder = "Username" styleClass = "login-input" value = "#{loginVO.username}" required = "true">
+							<f:validateRegex pattern = "^[a-zA-Z0-9_-]{6,20}$"/>
+						</p:inputText>
+					</div>
+					<div class = "input-container">
+						<p:password id = "password" placeholder = "Password" styleClass = "login-input" value = "#{loginVO.password}" required = "true">
+							<f:validateRegex pattern = "^[a-zA-Z0-9_-]{6,20}$"/>
+						</p:password>
+					</div>
+					<div id = "loginButtonContainer" class = "hide-mobile">
+						<div id = "loginButtonContainerInner">
+							<p:commandLink id = "loginButton" value = "LOG IN" styleClass = "login-command-button" actionListener = "#{loginVO.authenticateUser}" validateClient = "true"/>
+						</div>
+					</div>
+					<p:separator styleClass = "login-separator hide-mobile"/>
+					
+					<div id = "createForgotContainer" class = "hide-mobile">
+						<div class = "create-forgot-container-inner">
+							<p:commandLink id = "forgotButton" value = "FORGOT" styleClass = "login-command-button" action = "forgot" immediate = "true"/>
+						</div>
+						<div class="vertical-line" style="height: 60px; margin-top: 5px;" />
+						<div class = "create-forgot-container-inner">
+							<p:commandLink id = "createButton" value = "CREATE" styleClass = "login-command-button" action = "create" immediate = "true"/>
+						</div>
+					</div>
+					
+					<div class = "hide-desktop">
+						<p:commandButton value = "LOG IN" styleClass = "hide-desktop mobile-button log-in-button"/>
+						<p:commandButton value = "CREATE" styleClass = "hide-desktop mobile-button log-in-button"/>
+						<p:commandLink value = "Forgot Password?" style = "margin-top: 10px;"/>
+					</div>
+				</div>
+			</h:form>
+		</ui:define>
+		
+	</ui:composition>
+</html>
