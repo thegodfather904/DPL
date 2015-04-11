@@ -44,7 +44,7 @@
 					</div>
 					<div id = "loginButtonContainer" class = "hide-mobile">
 						<div id = "loginButtonContainerInner">
-							<p:commandLink id = "loginButton" value = "LOG IN" styleClass = "login-command-button" actionListener = "#{loginVO.authenticateUser}" validateClient = "true"/>
+							<p:commandLink id = "loginButton" value = "LOG IN" styleClass = "login-command-button" action = "#{loginVO.authenticateUser}" validateClient = "true"/>
 						</div>
 					</div>
 					<p:separator styleClass = "login-separator hide-mobile"/>
