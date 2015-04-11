@@ -26,7 +26,7 @@
 	
 		<ui:define name = "content">
 			<h:form id = "loginForm">
-				<p:graphicImage name ="LOGO_3.png" library = "images" alt = "LOGO" styleClass = "img-logo"/>
+				<p:graphicImage name ="LOGO_2.png" library = "images" alt = "LOGO" styleClass = "img-logo"/>
 <!-- 			<img src="../resources/images/LOGO_2.png" class="img-logo"/> -->
 				<div class = "login-container">
 <!-- 					<div class = "top-title"> -->
@@ -44,7 +44,7 @@
 					</div>
 					<div id = "loginButtonContainer" class = "hide-mobile">
 						<div id = "loginButtonContainerInner">
-							<p:commandLink id = "loginButton" value = "LOG IN" styleClass = "login-command-button" actionListener = "#{loginVO.authenticateUser}" validateClient = "true"/>
+							<p:commandLink id = "loginButton" value = "LOG IN" styleClass = "login-command-button" action = "#{loginVO.authenticateUser}" validateClient = "true"/>
 						</div>
 					</div>
 					<p:separator styleClass = "login-separator hide-mobile"/>

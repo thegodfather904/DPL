@@ -28,11 +28,20 @@ public class LoginVO implements Serializable
 	}
 	
 	/*Verifies username and password*/
-	public void authenticateUser()
+	public String authenticateUser()
 	{
 		LoginEvent event = new LoginEvent();
-		boolean isAuthenticated = event.authenticateUser(username, password);
+		boolean isAuthenticated = event.authenticateUser(authenticatedUser, username, password);
+		
 		System.out.println(isAuthenticated);
+		
+		if(isAuthenticated)
+		{
+			return "home";
+		}
+		else
+			return "";
+
 	}
 	
 	public String getUsername() {

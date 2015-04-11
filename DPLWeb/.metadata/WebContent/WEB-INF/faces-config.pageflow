@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14246549021050" configfile="/DPLWeb/WebContent/WEB-INF/faces-config.xml">
-  <nodes xsi:type="pageflow:PFPage" name="*" id="pf14246550195941" outlinks="pf14246550195943 pf14246553872566 pf14279373973122" path="*"/>
+  <nodes xsi:type="pageflow:PFPage" name="*" id="pf14246550195941" outlinks="pf14246550195943 pf14246553872566 pf14279373973122 pf14287184527890" path="*"/>
   <nodes xsi:type="pageflow:PFPage" name="pages/newUser.xhtml" id="pf14246550195945" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" inlinks="pf14246550195943" path="/pages/newUser.xhtml"/>
   <nodes xsi:type="pageflow:PFPage" name="pages/forgotPassword.xhtml" id="pf14246553872567" referenceLink="//@navigationRule.0/@navigationCase.2/@toViewId|" inlinks="pf14246553872566" path="/pages/forgotPassword.xhtml"/>
   <nodes xsi:type="pageflow:PFPage" name="pages/login.xhtml" id="pf14279373973123" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf14279373973122" path="/pages/login.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="pages/homepage.xhtml" id="pf14287184527891" referenceLink="//@navigationRule.0/@navigationCase.3/@toViewId|" inlinks="pf14287184527890" path="/pages/homepage.xhtml"/>
   <links id="pf14246550195943" target="pf14246550195945" source="pf14246550195941" outcome="create"/>
   <links id="pf14246553872566" target="pf14246553872567" source="pf14246550195941" outcome="forgot"/>
   <links id="pf14279373973122" target="pf14279373973123" source="pf14246550195941" outcome="login"/>
+  <links id="pf14287184527890" target="pf14287184527891" source="pf14246550195941" outcome="home"/>
 </pageflow:Pageflow>
