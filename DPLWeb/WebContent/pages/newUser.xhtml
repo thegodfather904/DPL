@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml"
@@ -7,9 +7,42 @@
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:p="http://primefaces.org/ui">
 
-	<ui:composition template="/templates/template.xhtml">
-		<ui:define name = "content">
-			New User
+	<ui:composition template = "/templates/template.xhtml">
+	
+		<ui:define name = "title">DPL - Log In</ui:define>
+	
+		<ui:define name = "stylesheets">
+			<h:outputStylesheet library = "css" name = "login.css"/>
 		</ui:define>
+		
+		<ui:define name = "webfonts">
+			<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'></link>
+		</ui:define>
+	
+		<ui:define name = "header">
+			<!-- Override so header doesn't show on login -->
+		</ui:define>
+	
+		<ui:define name = "content">
+			<h:form id = "loginForm">
+				<p:graphicImage name ="LOGO_2.png" library = "images" alt = "LOGO" styleClass = "img-logo"/>
+
+				<div class = "login-container">
+
+					<div class = "input-container">
+						<p:inputText id = "username" placeholder = "Username" styleClass = "login-input" value = "#{loginVO.username}" required = "true">
+							<f:validateRegex pattern = "^[a-zA-Z0-9_-]{6,20}$"/>
+						</p:inputText>
+					</div>
+					<div class = "input-container">
+						<p:password id = "password" placeholder = "Password" styleClass = "login-input" value = "#{loginVO.password}" required = "true">
+							<f:validateRegex pattern = "^[a-zA-Z0-9_-]{6,20}$"/>
+						</p:password>
+					</div>
+
+				</div>
+			</h:form>
+		</ui:define>
+		
 	</ui:composition>
 </html>

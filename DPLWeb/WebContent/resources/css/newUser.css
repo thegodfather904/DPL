@@ -1,0 +1,185 @@
+/**********************************************************************/
+/*Creation Date: 	2/14/15                                           */
+/*Last Modified: 	2/14/15                                           */
+/*Description:		Login page                                        */
+/**********************************************************************/
+
+/*mobile*/
+@media only screen and (max-width: 480px)
+{
+	.login-container
+	{
+		background-color: #45C69C;
+		border-style: none;
+		width: 320px;
+	}
+	
+	.input-container
+	{
+		width: 285px;
+	}
+	
+	.ui-inputfield.ui-state-hover
+	{
+		border: 1px solid #333;
+	}
+	
+	.ui-inputfield.ui-state-focus
+	{
+		border: 1px solid #333;
+		box-shadow: 0px 0px 4px 0px rgba(51,51,51,0.75);
+	}
+	
+	.ui-commandlink:hover
+	{
+		color: #333;
+		opacity: .6;
+	}
+	
+	.login-separator
+	{
+		width: 285px;
+	}
+	
+	.hide-mobile
+	{
+		display: none;
+	}
+	
+	.log-in-button
+	{
+		width: 285px;
+		margin-top: 40px;
+	}
+	
+	.img-logo
+	{
+		margin: 10px;
+	}
+	
+}
+
+/*tablet and desktop*/
+@media only screen and (min-width: 481px)
+{
+	.login-container
+	{
+		border: 6px solid #fff;
+		border-radius: 25px;
+		-webkit-box-shadow: 40px 40px 20px rgba(0, 0, 0, 0.25);
+		-moz-box-shadow: 40px 40px 20px rgba(0, 0, 0, 0.25);
+		box-shadow: 40px 40px 20px rgba(0, 0, 0, 0.25);
+		background-color: #fff;
+		width: 450px;
+	}
+	
+	.input-container
+	{
+		width: 350px;
+	}
+	
+	.login-separator
+	{
+		width: 352px;
+	}
+	
+	.hide-desktop
+	{
+		display: none;
+	}
+}
+
+
+
+/*Styles for all screens*/
+body
+{
+    display: table;
+    background-color: #45C69C;
+}
+
+body>div 
+{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.login-container
+{
+	height: 350px;
+	margin: 0 auto 0 auto;
+	margin-top: -40px;
+}
+
+.top-title
+{
+	font-family: 'Montserrat', Serif;
+	font-size: 40px;
+	width: 295px;
+	margin: 45px auto 0 auto;
+	color: #333;
+}
+
+.input-container
+{
+	margin: 40px auto 0 auto;
+}
+
+.login-input
+{
+	width: 97%;
+	font-size: 25px;
+	border-radius: 10px;
+}
+
+#loginButtonContainer
+{
+	width: 100%;
+	margin: 35px 0;
+}
+
+/*had to add this to center the command link, it wouldn't let me give the link a width */
+#loginButtonContainerInner
+{
+	width: 84px; 
+	margin: 0 auto;
+}
+
+.login-command-button
+{
+	font-size: 20px;
+}
+
+#createForgotContainer
+{
+	width: 100%;
+}
+
+.create-forgot-container-inner
+{
+	float: left; 
+	width: 49%;
+	margin-top: 20px;
+}
+
+.img-logo
+{
+	width: 135px;
+	background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
