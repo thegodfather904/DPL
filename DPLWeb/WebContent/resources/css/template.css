@@ -7,31 +7,52 @@
 
 /***************************Header*************************************/
 
-/*Top banner of the site*/
 .banner
 {
-	background-color: #45C69C;
 	width: 100%;
-	height: 100px;
-	border-bottom: 3px solid #575657;
+	height: 75px;
+	border-bottom: 1px solid #c0c2c7;
 }
 
-/*User name inside the banner*/
-.banner-user-name
+.banner-link-container
 {
 	float: right;
-	font-size: 22px;
-	color: #4d4d4d;
-	margin: 50px 18px 0 0;
+	margin: 22px 28px 0 0;
 }
 
-.banner-img-logo
+.banner-link
 {
-	
-	width: 300px;
-	margin-top: 10px;
-	margin-left: 10px;
+	font-size: 22px;
 }
+
+
+
+
+/*Top banner of the site*/
+/* .banner */
+/* { */
+/* 	background-color: #45C69C; */
+/* 	width: 100%; */
+/* 	height: 100px; */
+/* 	border-bottom: 3px solid #575657; */
+/* } */
+
+/*User name inside the banner*/
+/* .banner-user-name */
+/* { */
+/* 	float: right; */
+/* 	font-size: 22px; */
+/* 	color: #4d4d4d; */
+/* 	margin: 50px 18px 0 0; */
+/* } */
+
+/* .banner-img-logo */
+/* { */
+	
+/* 	width: 300px; */
+/* 	margin-top: 10px; */
+/* 	margin-left: 10px; */
+/* } */
 
 
 
@@ -43,6 +64,7 @@
 	position: absolute;
 	bottom: 0;
 	left: 0;
+	color: #45C69C;
 }
 
 #footer-copyright

@@ -14,8 +14,15 @@
 	<h:body>
 		<ui:composition>
 			<div class = "banner">
-					<h:graphicImage name = "LOGO_1.png" library = "images" styleClass = "banner-img-logo"/>
-				<h:outputText value = "TheGodfather904" styleClass = "banner-user-name"/>
+				<div class = "banner-link-container">
+					<p:commandLink styleClass = "banner-link" value = "PICKS"/>
+				</div>
+				<div class = "banner-link-container">
+					<p:commandLink styleClass = "banner-link" value = "STANDINGS"/>
+				</div>
+				<div class = "banner-link-container">
+					<p:commandLink styleClass = "banner-link" value = "HOME"/>
+				</div>
 			</div>
 		</ui:composition>
 	</h:body>
