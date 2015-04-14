@@ -25,8 +25,29 @@
 	font-size: 22px;
 }
 
+.banner-username
+{
+	font-size: 18px;
+	color: #45C69C;
+	margin: 2px 0 0 5px;
+}
 
+.banner-icon-container
+{	
+	border: 1px solid #45C69C;
+	width: 23px;
+	height: 23px;
+	-webkit-border-radius: 200px 200px 200px 200px;
+	-moz-border-radius: 200px 200px 200px 200px;
+	border-radius: 200px 200px 200px 200px;
+	float: left;
+}
 
+.banner-username-icon
+{
+	color: #45C69C;
+	margin: 5px 0 0 3px;
+}
 
 /*Top banner of the site*/
 /* .banner */

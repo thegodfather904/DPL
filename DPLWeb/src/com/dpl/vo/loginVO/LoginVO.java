@@ -34,7 +34,7 @@ public class LoginVO implements Serializable
 		boolean isAuthenticated = event.authenticateUser(authenticatedUser, username, password);
 		
 		System.out.println(isAuthenticated);
-		
+		System.out.println(authenticatedUser.getUsername());
 		if(isAuthenticated)
 		{
 			return "home";

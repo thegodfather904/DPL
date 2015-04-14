@@ -47,6 +47,7 @@ public class AuthenticatedUser implements Serializable
 	}
 
 	public String getUsername() {
+		System.out.println("USERNAME: " + username);
 		return username;
 	}
 
