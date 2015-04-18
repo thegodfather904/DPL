@@ -10,14 +10,14 @@
 .banner
 {
 	width: 100%;
-	height: 75px;
+	height: 82px;
 	border-bottom: 1px solid #c0c2c7;
 }
 
 .banner-link-container
 {
 	float: right;
-	margin: 22px 28px 0 0;
+	margin: 28px 28px 0 0;
 }
 
 .banner-link
@@ -25,7 +25,7 @@
 	font-size: 22px;
 }
 
-.banner-username
+.banner-username-command-link
 {
 	font-size: 18px;
 	color: #45C69C;
@@ -35,46 +35,45 @@
 .banner-icon-container
 {	
 	border: 1px solid #45C69C;
-	width: 23px;
-	height: 23px;
+	width: 27px;
+	height: 27px;
 	-webkit-border-radius: 200px 200px 200px 200px;
 	-moz-border-radius: 200px 200px 200px 200px;
 	border-radius: 200px 200px 200px 200px;
 	float: left;
 }
 
+.banner-username-link-container
+{
+	margin: 26px 25px 0 25px;
+}
+
 .banner-username-icon
 {
 	color: #45C69C;
-	margin: 5px 0 0 3px;
+	margin: 5px 0 0 6px;
 }
 
-/*Top banner of the site*/
-/* .banner */
-/* { */
-/* 	background-color: #45C69C; */
-/* 	width: 100%; */
-/* 	height: 100px; */
-/* 	border-bottom: 3px solid #575657; */
-/* } */
+.banner-username-link
+{
+	text-transform: uppercase;
+	display: inline-block;
+	margin-top: 3px;
+}
 
-/*User name inside the banner*/
-/* .banner-user-name */
-/* { */
-/* 	float: right; */
-/* 	font-size: 22px; */
-/* 	color: #4d4d4d; */
-/* 	margin: 50px 18px 0 0; */
-/* } */
 
-/* .banner-img-logo */
-/* { */
-	
-/* 	width: 300px; */
-/* 	margin-top: 10px; */
-/* 	margin-left: 10px; */
-/* } */
+.logo-container
+{
+	float: left;
+	width: 250px;
+	margin-left: 25px;
+}
 
+.logo
+{
+	width: 250px;
+	height: 80px;
+}
 
 
 /***************************Footer*************************************/

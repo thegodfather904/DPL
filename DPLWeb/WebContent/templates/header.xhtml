@@ -14,11 +14,21 @@
 	<h:body>
 		<ui:composition>
 			<div class = "banner">
-				<div class = "banner-link-container" style = "margin: 24px 28px 0 25px;">
-					<div class = "banner-icon-container">
-						<i class="fa fa-user fa-lg banner-username-icon"></i>
-					</div>
-					<p:commandLink styleClass = "banner-username" value = "Tony"/>
+				<div class = "logo-container">
+					<p:graphicImage library = "images" name = "Banner_Green_Grey.png" styleClass = "logo"/>
+				</div>
+				<div class = "banner-link-container banner-username-link-container">
+<!-- 					<div class = "banner-icon-container"> -->
+<!-- 						<i class="fa fa-user fa-lg banner-username-icon"></i> -->
+<!-- 					</div> -->
+					<p:commandLink styleClass = "banner-username-command-link">
+						<div class = "banner-icon-container">
+							<i class="fa fa-user banner-username-icon"></i>
+						</div>
+						
+						<span class = "banner-username-link">Tony</span>
+						
+					</p:commandLink>
 				</div>
 				<div class = "banner-link-container">
 					<p:commandLink styleClass = "banner-link" value = "PICKS"/>
