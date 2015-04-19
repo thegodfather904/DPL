@@ -1,4 +1,4 @@
-package com.dpl.vo.loginVO;
+package com.dpl.vo;
 
 import java.io.Serializable;
 
@@ -6,7 +6,7 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 import javax.faces.bean.ManagedProperty;
 
-import com.dpl.event.loginEvent.LoginEvent;
+import com.dpl.event.LoginEvent;
 import com.dpl.authenticatedUser.AuthenticatedUser;
 
 @ManagedBean
@@ -30,11 +30,13 @@ public class LoginVO implements Serializable
 	/*Verifies username and password*/
 	public String authenticateUser()
 	{
+		System.out.println(authenticatedUser.getName());
+		
 		LoginEvent event = new LoginEvent();
 		boolean isAuthenticated = event.authenticateUser(authenticatedUser, username, password);
 		
-		System.out.println(isAuthenticated);
-		System.out.println(authenticatedUser.getUsername());
+//		System.out.println(isAuthenticated);
+//		System.out.println(authenticatedUser.getUsername());
 		if(isAuthenticated)
 		{
 			return "home";
@@ -58,6 +60,11 @@ public class LoginVO implements Serializable
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+	
+	public AuthenticatedUser getAuthenticatedUser()
+	{
+		return authenticatedUser;
 	}
 	
 	public void setAuthenticatedUser(AuthenticatedUser authenticatedUser)

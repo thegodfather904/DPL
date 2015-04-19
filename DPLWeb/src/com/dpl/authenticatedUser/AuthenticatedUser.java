@@ -3,10 +3,10 @@ package com.dpl.authenticatedUser;
 import java.io.Serializable;
 
 import javax.faces.bean.ManagedBean;
-import javax.faces.bean.SessionScoped;
+import javax.faces.bean.ViewScoped;
 
-@ManagedBean
-@SessionScoped
+@ManagedBean(name = "authenticatedUser")
+@ViewScoped
 public class AuthenticatedUser implements Serializable
 {
 	private static final long serialVersionUID = 2455816720678921431L;

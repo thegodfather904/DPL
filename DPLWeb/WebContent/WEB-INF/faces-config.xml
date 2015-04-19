@@ -29,10 +29,10 @@
 		</navigation-case>
 	</navigation-rule>
 
-<!-- 	<managed-bean> -->
-<!-- 		<managed-bean-name>authenticatedUser</managed-bean-name> -->
-<!-- 		<managed-bean-class>com.dpl.authenticatedUser.AuthenticatedUser</managed-bean-class> -->
-<!-- 		<managed-bean-scope>session</managed-bean-scope> -->
-<!-- 	</managed-bean> -->
+	<managed-bean>
+		<managed-bean-name>authenticatedUser</managed-bean-name>
+		<managed-bean-class>com.dpl.authenticatedUser.AuthenticatedUser</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
 
 </faces-config>

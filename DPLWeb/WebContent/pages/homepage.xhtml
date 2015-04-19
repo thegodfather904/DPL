@@ -8,6 +8,17 @@
 	xmlns:p="http://primefaces.org/ui">
 
 	<ui:composition template="/templates/template.xhtml">
+	
+		<ui:define name = "title">DPL-Home</ui:define>"
+	
+		<ui:define name = "stylesheets"></ui:define>
+	
+		<ui:define name = "webfonts"></ui:define>
+	
+		<ui:define name = "content">
+			<h:outputText value = "#{homepageVO.name}"/>
+		</ui:define>
+	
 		
 	</ui:composition>
 </html>

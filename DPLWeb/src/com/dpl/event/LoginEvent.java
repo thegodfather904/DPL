@@ -1,4 +1,4 @@
-package com.dpl.event.loginEvent;
+package com.dpl.event;
 
 import java.io.Serializable;
 
@@ -12,7 +12,7 @@ import com.dpl.authenticatedUser.AuthenticatedUser;
 public class LoginEvent implements Serializable
 {
 	private static final long serialVersionUID = -9133713219432742258L;
-
+	
 	public LoginEvent()
 	{
 		
