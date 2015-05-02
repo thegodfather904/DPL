@@ -3,47 +3,52 @@ package com.dpl.vo;
 import java.io.Serializable;
 
 import javax.faces.bean.ManagedBean;
-import javax.faces.bean.ViewScoped;
-import javax.faces.bean.ManagedProperty;
+import javax.faces.bean.SessionScoped;
 
-import com.dpl.event.LoginEvent;
+import javax.annotation.PostConstruct;
+
 import com.dpl.authenticatedUser.AuthenticatedUser;
+import com.dpl.event.LoginEvent;
 
 @ManagedBean
-@ViewScoped
+@SessionScoped
 public class LoginVO implements Serializable
 {
 	private static final long serialVersionUID = 6893892963898585571L;
 	
+	/*Username and password entered by the user*/
 	private String username;
 	private String password;
 	
-	//Authenticated User Bean
-	@ManagedProperty("#{authenticatedUser}")
-	private AuthenticatedUser authenticatedUser;
+	private AuthenticatedUser userSession;
 	
 	public LoginVO()
 	{
 		
 	}
 	
+	@PostConstruct
+	public void init()
+	{
+		//create a new user session
+		userSession = new AuthenticatedUser();
+	}
+	
 	/*Verifies username and password*/
 	public String authenticateUser()
 	{
-		System.out.println(authenticatedUser.getName());
-		
 		LoginEvent event = new LoginEvent();
-		boolean isAuthenticated = event.authenticateUser(authenticatedUser, username, password);
+		boolean isAuthenticated = event.authenticateUser(userSession, username, password);
 		
-//		System.out.println(isAuthenticated);
-//		System.out.println(authenticatedUser.getUsername());
 		if(isAuthenticated)
 		{
+			//dont want to store there password in session
+			password = "";
+			
 			return "home";
 		}
 		else
 			return "";
-
 	}
 	
 	public String getUsername() {
@@ -61,16 +66,24 @@ public class LoginVO implements Serializable
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
-	public AuthenticatedUser getAuthenticatedUser()
-	{
-		return authenticatedUser;
+
+	public AuthenticatedUser getUserSession() {
+		return userSession;
+	}
+
+	public void setUserSession(AuthenticatedUser userSession) {
+		this.userSession = userSession;
 	}
 	
-	public void setAuthenticatedUser(AuthenticatedUser authenticatedUser)
-	{
-		this.authenticatedUser = authenticatedUser;
-	}
+//	public AuthenticatedUser getAuthenticatedUser()
+//	{
+//		return authenticatedUser;
+//	}
+//	
+//	public void setAuthenticatedUser(AuthenticatedUser authenticatedUser)
+//	{
+//		this.authenticatedUser = authenticatedUser;
+//	}
 	
 	
 }

@@ -2,11 +2,6 @@ package com.dpl.authenticatedUser;
 
 import java.io.Serializable;
 
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.ViewScoped;
-
-@ManagedBean(name = "authenticatedUser")
-@ViewScoped
 public class AuthenticatedUser implements Serializable
 {
 	private static final long serialVersionUID = 2455816720678921431L;
@@ -47,11 +42,12 @@ public class AuthenticatedUser implements Serializable
 	}
 
 	public String getUsername() {
-		System.out.println("USERNAME: " + username);
+//		System.out.println("GET USERNAME: " + username);
 		return username;
 	}
 
 	public void setUsername(String username) {
+//		System.out.println("SET USERNAME: " + username);
 		this.username = username;
 	}
 	

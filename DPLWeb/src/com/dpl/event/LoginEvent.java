@@ -18,7 +18,7 @@ public class LoginEvent implements Serializable
 		
 	}
 	
-	public boolean authenticateUser(AuthenticatedUser authenticatedUser, String username, String password)
+	public boolean authenticateUser(AuthenticatedUser userSession, String username, String password)
 	{
 		boolean isAuthenticated = false;
 		
@@ -26,8 +26,8 @@ public class LoginEvent implements Serializable
 		if(username.equals("username") && password.equals("password"))
 		{
 			isAuthenticated = true;
-			authenticatedUser.setUsername("TheGodfather904");
-			authenticatedUser.setName("Tony Scialo");
+			userSession.setUsername("TheGodfather904");
+			userSession.setName("Tony Scialo");
 		}
 		
 		return isAuthenticated;

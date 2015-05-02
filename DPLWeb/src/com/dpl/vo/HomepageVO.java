@@ -7,8 +7,6 @@ import javax.faces.bean.ViewScoped;
 import javax.faces.bean.ManagedProperty;
 import javax.annotation.PostConstruct;
 
-import com.dpl.authenticatedUser.AuthenticatedUser;
-
 @ManagedBean
 @ViewScoped
 public class HomepageVO implements Serializable
@@ -16,11 +14,11 @@ public class HomepageVO implements Serializable
 
 	private static final long serialVersionUID = -6146998913559247790L;
 	
-	//Authenticated User Bean
-		@ManagedProperty("#{authenticatedUser}")
-		private AuthenticatedUser authenticatedUser;
+	//user session bean
+	@ManagedProperty("#{loginVO}")
+	private LoginVO login;
 	
-	private String name = "TEST";
+	private String name;
 	
 	public HomepageVO()
 	{
@@ -30,8 +28,9 @@ public class HomepageVO implements Serializable
 	@PostConstruct
 	public void init()
 	{
-		name = authenticatedUser.getName();
-		System.out.println(name);
+		name = login.getUserSession().getName();
+		System.out.println(login.getUserSession().getName());
+		System.out.println(login.getUserSession().getUsername());
 	}
 	
 	public String getName() {
@@ -42,15 +41,14 @@ public class HomepageVO implements Serializable
 		this.name = name;
 	}
 
-	public AuthenticatedUser getAuthenticatedUser()
+	public void setLogin(LoginVO login)
 	{
-		return authenticatedUser;
+		this.login = login;
 	}
 	
-	public void setAuthenticatedUser(AuthenticatedUser authenticatedUser)
+	public LoginVO getLogin()
 	{
-		this.authenticatedUser = authenticatedUser;
+		return login;
 	}
-	
 	
 }
