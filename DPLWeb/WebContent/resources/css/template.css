@@ -75,6 +75,90 @@
 	height: 74px;
 }
 
+/*Mobile Menu Button*/
+.banner-mobile-menu
+{
+	width: 62px;
+	float: right;
+	margin: 14px;	
+}
+
+.banner-mobile-menu .ui-button
+{
+	background-color: #ffffff;
+	border-style: none;
+	width: 60px;
+	height: 60px;
+	color: #45C69C
+}
+
+.banner-mobile-menu .ui-button-icon-only .ui-icon
+{
+	position: relative !important;
+	top:0 !important;
+	margin-left: 9px;
+}
+
+.banner-mobile-menu .ui-button-icon-left
+{
+	left: 0em !important;
+}
+
+/*IE Fix*/
+.banner-mobile-menu .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default
+{
+	background: #ffffff url("") 50% 50% repeat-x !important
+}
+
+.banner-mobile-menu .ui-state-hover
+{
+	box-shadow: 0px 0px 0px #ffffff !important;
+}
+
+.banner-mobile-menu .ui-state-focus
+{
+	box-shadow: 0px 0px 0px #ffffff !important;
+	border: 1px solid #ffffff !important;
+	outline: none;
+}
+
+#mobileMenu
+{
+	width: 99%;
+	left: -1px !important;
+	overflow-x: hidden !important;
+/* 	margin-top: 53px; */
+}
+
+
+/*Tablet and Desktop*/
+@media only screen and (min-width: 777px)
+{
+	.banner-mobile-menu
+	{
+		display: none;
+	}
+	
+	.banner-menu-container
+	{
+		display: display;
+	}
+}
+
+/*Mobile*/
+@media only screen and (max-width: 776px)
+{
+	.banner-mobile-menu
+	{
+		display: display;
+	}
+	
+	.banner-menu-container
+	{
+		display: none;
+	}
+}
+
 
 /***************************Footer*************************************/
 #footer

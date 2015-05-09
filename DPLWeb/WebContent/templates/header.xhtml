@@ -14,32 +14,41 @@
 	<h:body>
 		<ui:composition>
 			<div class = "banner">
+
 				<div class = "logo-container">
 					<p:graphicImage library = "images" name = "Banner_Green_Grey.png" styleClass = "logo"/>
 				</div>
-				<div class = "banner-link-container banner-username-link-container">
-<!-- 					<div class = "banner-icon-container"> -->
-<!-- 						<i class="fa fa-user fa-lg banner-username-icon"></i> -->
-<!-- 					</div> -->
-					<p:commandLink styleClass = "banner-username-command-link">
-						<div class = "banner-icon-container">
-							<i class="fa fa-user banner-username-icon"></i>
-						</div>
-						
-						<span class = "banner-username-link">Tony</span>
-						
-					</p:commandLink>
+					
+				<div class = "banner-menu-container">
+					<div class = "banner-link-container banner-username-link-container">
+						<p:commandLink styleClass = "banner-username-command-link">
+							<div class = "banner-icon-container">
+								<i class="fa fa-user banner-username-icon"></i>
+							</div>
+							
+							<span class = "banner-username-link">Tony</span>
+							
+						</p:commandLink>
+					</div>
+					<div class = "banner-link-container">
+						<p:commandLink styleClass = "banner-link" value = "PICKS"/>
+					</div>
+					<div class = "banner-link-container">
+						<p:commandLink styleClass = "banner-link" value = "STANDINGS"/>
+					</div>
+					<div class = "banner-link-container">
+						<p:commandLink styleClass = "banner-link" value = "HOME"/>
+					</div>
 				</div>
-				<div class = "banner-link-container">
-					<p:commandLink styleClass = "banner-link" value = "PICKS"/>
+				<div class = "banner-mobile-menu">
+					<p:commandButton id = "mobileMenuButton" icon = "fa fa-bars fa-3x"/>
+					<p:overlayPanel id = "mobileMenu" for = "mobileMenuButton">
+						MENU ITEMS
+					</p:overlayPanel>
 				</div>
-				<div class = "banner-link-container">
-					<p:commandLink styleClass = "banner-link" value = "STANDINGS"/>
-				</div>
-				<div class = "banner-link-container">
-					<p:commandLink styleClass = "banner-link" value = "HOME"/>
-				</div>
+				
 			</div>
+	
 		</ui:composition>
 	</h:body>
 </html>
