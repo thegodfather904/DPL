@@ -25,9 +25,7 @@
 							<div class = "banner-icon-container">
 								<i class="fa fa-user banner-username-icon"></i>
 							</div>
-							
 							<span class = "banner-username-link">Tony</span>
-							
 						</p:commandLink>
 					</div>
 					<div class = "banner-link-container">
@@ -43,7 +41,33 @@
 				<div class = "banner-mobile-menu">
 					<p:commandButton id = "mobileMenuButton" icon = "fa fa-bars fa-3x"/>
 					<p:overlayPanel id = "mobileMenu" for = "mobileMenuButton">
-						MENU ITEMS
+						<div class = "banner-mobile-menu-item">
+							<p:commandLink>
+								<div class = "banner-mobile-menu-item-holder">
+									<i class = "fa fa-home fa-lg banner-mobile-menu-item-icon"/>
+									<span>Home</span>
+								</div>
+								<i class = "fa fa-angle-right fa-lg banner-mobile-menu-item-arrow"/>
+							</p:commandLink>
+						</div>
+						<div class = "banner-mobile-menu-item">
+							<p:commandLink>
+								<div class = "banner-mobile-menu-item-holder">
+									<i class = "fa fa-trophy fa-lg banner-mobile-menu-item-icon"/>
+									<span>Standings</span>
+								</div>
+								<i class = "fa fa-angle-right fa-lg banner-mobile-menu-item-arrow"/>
+							</p:commandLink>
+						</div>
+						<div class = "banner-mobile-menu-item">
+							<p:commandLink>
+								<div class = "banner-mobile-menu-item-holder">
+									<i class = "fa fa-bolt fa-lg banner-mobile-menu-item-icon"/>
+									<span>Picks</span>
+								</div>
+								<i class = "fa fa-angle-right fa-lg banner-mobile-menu-item-arrow"/>
+							</p:commandLink>
+						</div>
 					</p:overlayPanel>
 				</div>
 				

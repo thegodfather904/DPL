@@ -124,10 +124,35 @@
 
 #mobileMenu
 {
-	width: 99%;
+	width: 100%;
 	left: -1px !important;
 	overflow-x: hidden !important;
 /* 	margin-top: 53px; */
+}
+
+.banner-mobile-menu-item
+{
+	width: 100%;
+	height: 60px;
+	font-size: 24px;
+}
+
+.banner-mobile-menu-item-holder
+{
+	float: left;
+	width: 96%;
+}
+
+.banner-mobile-menu-item-arrow
+{
+	float: right;
+	display: inline-block;
+	width: 4%;
+}
+
+.banner-mobile-menu-item-icon
+{
+	margin-right: 12px;
 }
 
 
