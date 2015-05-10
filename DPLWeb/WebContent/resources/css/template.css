@@ -133,8 +133,10 @@
 .banner-mobile-menu-item
 {
 	width: 100%;
-	height: 60px;
+	height: 26px;
 	font-size: 24px;
+	padding: 18px 0;
+	border-bottom: 1px solid #C0C2C7;
 }
 
 .banner-mobile-menu-item-holder
@@ -159,6 +161,11 @@
 /*Tablet and Desktop*/
 @media only screen and (min-width: 777px)
 {
+	.logo-container
+	{
+		display: display;
+	}
+	
 	.banner-mobile-menu
 	{
 		display: none;
@@ -173,6 +180,11 @@
 /*Mobile*/
 @media only screen and (max-width: 776px)
 {
+	.logo-container
+	{
+		display: none;
+	}
+	
 	.banner-mobile-menu
 	{
 		display: display;

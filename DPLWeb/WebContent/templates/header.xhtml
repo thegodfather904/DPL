@@ -41,7 +41,7 @@
 				<div class = "banner-mobile-menu">
 					<p:commandButton id = "mobileMenuButton" icon = "fa fa-bars fa-3x"/>
 					<p:overlayPanel id = "mobileMenu" for = "mobileMenuButton">
-						<div class = "banner-mobile-menu-item">
+						<div class = "banner-mobile-menu-item" style = "padding-top: 10px;">
 							<p:commandLink>
 								<div class = "banner-mobile-menu-item-holder">
 									<i class = "fa fa-home fa-lg banner-mobile-menu-item-icon"/>
@@ -62,8 +62,26 @@
 						<div class = "banner-mobile-menu-item">
 							<p:commandLink>
 								<div class = "banner-mobile-menu-item-holder">
-									<i class = "fa fa-bolt fa-lg banner-mobile-menu-item-icon"/>
+									<i class = "fa fa-bolt fa-lg" style = "margin: 0 19px 0 10px;"/>
 									<span>Picks</span>
+								</div>
+								<i class = "fa fa-angle-right fa-lg banner-mobile-menu-item-arrow"/>
+							</p:commandLink>
+						</div>
+						<div class = "banner-mobile-menu-item">
+							<p:commandLink>
+								<div class = "banner-mobile-menu-item-holder">
+									<i class = "fa fa-user fa-lg" style = "margin: 0 13px 0 7px;"/>
+									<span>Profile</span>
+								</div>
+								<i class = "fa fa-angle-right fa-lg banner-mobile-menu-item-arrow"/>
+							</p:commandLink>
+						</div>
+						<div class = "banner-mobile-menu-item">
+							<p:commandLink>
+								<div class = "banner-mobile-menu-item-holder">
+									<i class = "fa fa-times-circle fa-lg" style = "margin: 0 13px 0 7px;"/>
+									<span>Sign Out</span>
 								</div>
 								<i class = "fa fa-angle-right fa-lg banner-mobile-menu-item-arrow"/>
 							</p:commandLink>
