@@ -61,9 +61,11 @@
 					</div>
 					
 					<div class = "hide-desktop">
-						<p:commandButton value = "LOG IN" styleClass = "hide-desktop mobile-button log-in-button"/>
-						<p:commandButton value = "CREATE" styleClass = "hide-desktop mobile-button log-in-button"/>
-						<p:commandLink value = "Forgot Password?" style = "margin-top: 10px;"/>
+						<p:commandButton value = "LOG IN" styleClass = "hide-desktop mobile-button log-in-button" action = "#{loginVO.authenticateUser}"/>
+						<div style = "width: 300px; margin-left: 16px; margin-top: 70px;">
+							<p:commandButton value = "FORGOT" styleClass = "hide-desktop mobile-button secondary-mobile-button" style = "border-right: 1px solid #000000;"/>
+							<p:commandButton value = "CREATE" styleClass = "hide-desktop mobile-button secondary-mobile-button" style = "border-left: 1px solid #000000;"/>
+						</div>
 					</div>
 				</div>
 			</h:form>

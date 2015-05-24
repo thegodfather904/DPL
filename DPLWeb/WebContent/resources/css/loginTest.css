@@ -15,7 +15,7 @@
 	
 	.login-input
 	{
-		border-radius: 0px;
+		border-radius: 10px;
 	}
 /* 	.ui-inputfield.ui-state-hover */
 /* 	{ */
@@ -48,6 +48,7 @@
 	{
 		width: 285px;
 		margin-top: 40px;
+		border-radius: 10px;
 	}
 	
 	.img-logo
@@ -55,6 +56,18 @@
 		margin: 10px;
 	}
 	
+	.secondary-mobile-button 
+	{
+		float: left;
+		width: 143px;
+		border-radius: 10px;
+	}
+	
+	.secondary-mobile-button.ui-button
+	{
+		margin-right: 0px !important;
+	}
+		
 }
 
 /*tablet and desktop*/
@@ -175,6 +188,13 @@ body>div
 	width: 135px;
 	background-position: center;
 }
+
+
+
+
+
+
+
 
 
 
