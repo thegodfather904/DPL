@@ -1,0 +1,12 @@
+/**********************************************************************/
+/*Creation Date: 	5/26/15                                           */
+/*Description:		Styles for the picks page				          */
+/**********************************************************************/
+
+.pick-card
+{
+	width: 300px;
+	height: 300px;
+	box-shadow: 2px 2px 5px #c0c2c7;
+	margin: 5px;
+}

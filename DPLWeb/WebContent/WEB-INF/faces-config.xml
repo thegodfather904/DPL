@@ -27,6 +27,11 @@
 			<to-view-id>/pages/homepage.xhtml</to-view-id>
 			<redirect/>
 		</navigation-case>
+		<navigation-case>
+			<from-outcome>picks</from-outcome>
+			<to-view-id>/pages/picks.xhtml</to-view-id>
+			<redirect/>
+		</navigation-case>
 	</navigation-rule>
 
 <!-- 	<managed-bean> -->
