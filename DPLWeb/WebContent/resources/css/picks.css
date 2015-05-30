@@ -3,10 +3,50 @@
 /*Description:		Styles for the picks page				          */
 /**********************************************************************/
 
+.instructions-contianer
+{
+	width: 100%;
+}
+
+.instructions
+{
+	width: 460px;
+	margin: 30px auto;
+	font-size: 22px;
+}
+
 .pick-card
 {
-	width: 300px;
-	height: 300px;
-	box-shadow: 2px 2px 5px #c0c2c7;
-	margin: 5px;
+	width: 266px;
+	height: 180px;
+	box-shadow: 0px 0px 8px #45C69C;
+	margin: 25px;
+}
+
+.team-logo
+{
+	width: 130px;
+	height: 130px;
+}
+
+.team-one, .team-two
+{
+	float: left;
+	height: 180px;
+}
+
+.team-one
+{
+	border-right: 1px solid #45C69C;
+}
+
+.team-two
+{
+	border-left: 1px solid #45C69C;
+}
+
+.over-under-number
+{
+	text-align: center;
+	font-size: 26px;
 }

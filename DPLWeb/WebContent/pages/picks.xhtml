@@ -18,8 +18,22 @@
 		<ui:define name = "webfonts"></ui:define>
 	
 		<ui:define name = "content">
+		
+			<div class = "instructions-contianer">
+				<div class = "instructions">
+					Tap the logo of the team to make a selection
+				</div> 
+			</div>
+		
 			<div class = "pick-card">
-				
+				<div class = "team-one">
+					<p:graphicImage name ="ravens.png" library = "images/nflLogos" alt = "Ravens" styleClass = "team-logo"/>
+					<div class = "over-under-number">+22.5</div>
+				</div>
+				<div class = "team-two">
+					<p:graphicImage name ="cowboys.png" library = "images/nflLogos" alt = "Cowboys" styleClass = "team-logo"/>
+					<div class = "over-under-number">-22.5</div>
+				</div>
 			</div>
 		</ui:define>
 	</ui:composition>
